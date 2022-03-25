@@ -5,7 +5,7 @@ import tensorflow as tf
 import pandas as pd
 import numpy as np
 from features import feature_columns   #the features columns to feed to the input layer
-from create_model_2 import make_model   #the function that builds the model
+from create_model import make_model   #the function that builds the model
 from train_model import train_model   #the function that trains the model
 from plot_metrics import plot_metrics   #the function that plots the metrics during training
 from evaluate_model import model_evaluate  #the function to evaluate the model on the test set
