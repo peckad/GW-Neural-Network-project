@@ -9,7 +9,7 @@ from create_model import make_model   #the function that builds the model
 from train_model import train_model   #the function that trains the model
 from plot_metrics import plot_metrics   #the function that plots the metrics during training
 from evaluate_model import model_evaluate  #the function to evaluate the model on the test set
-from roc_curve_2 import plot_roc_curve   #the function that plots the ROC curves
+from roc_curve import plot_roc_curve   #the function that plots the ROC curves
 from data_import import test_eval, test_roc, train_dfn  #data is imported from another script
 
 #set the hyperparameters
