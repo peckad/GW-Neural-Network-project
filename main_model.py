@@ -19,7 +19,7 @@ batch_size = 800
 label_name ='Label'
 validation_split = 0.10
 
-#define the metrics
+#define the metrics - only accuracy, precision, and recall are actually used - the others are computed for curiosity
 metrics = [tf.keras.metrics.BinaryAccuracy(name='accuracy'),
 	tf.keras.metrics.Precision(name='precision'),
 	tf.keras.metrics.Recall(name='recall'),
@@ -48,7 +48,7 @@ print('Curve printed')
 #evaluate the model against the test data
 model_evaluate(deap_nn, label_name, test_eval, batch_size)
 
-#plot the ROC curves
+#plot the ROC curves - with log axes and without - with FAR per year and without
 plot_roc_curve(test_roc, label_name, deap_nn)
 
 print('Done')
