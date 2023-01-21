@@ -3,4 +3,4 @@ All the code I wrote and used to create and train a neural network to classify e
 
 main_model.py is the main script for the project. All hyperparameters are set there, except for the structure of the network, set in create_model.py.
 
-All other scripts are called in main_mdoel.py, either directly or via another script.
+All other scripts are called in main_model.py, either directly or via another script.
